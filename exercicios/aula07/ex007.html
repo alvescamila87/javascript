@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles007.css">
+    <title>Eventos DOM</title>
+</head>
+<body>
+    <!-- Utilizado quando não quero colocar NÃO colocar listener no <script>  
+        <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">  
+        Look at the mirror!
+    </div> -->
+    <div id="area">
+    </div>
+    <script>
+        var mirror = window.document.getElementById('area')
+        mirror.addEventListener('click', clicar)
+        mirror.addEventListener('mouseenter', entrar)
+        mirror.addEventListener('mouseout', sair)
+        function clicar() {
+            mirror.innerText = 'Clicked!'
+            mirror.style.background = `red`
+        }
+        function entrar() {
+            mirror.innerText = 'Enter!'
+            mirror.style.background = `orange`
+        }
+        function sair() {
+            mirror.innerText = 'Out!'
+            mirror.style.background = `green`
+        } 
+    </script>
+</body>
+</html>

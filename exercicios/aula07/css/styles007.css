@@ -1,0 +1,16 @@
+#area {
+    background-color: darkmagenta;
+    color: aliceblue;
+    font: normal 20pt Arial;
+    width: 400px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+
+/* CSS EX008 */
+
+input {
+    font: normal 18pt Arial;
+}

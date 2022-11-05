@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles002.css">
+    <title>Exercício 06</title>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Resultado</p> 
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript.</p>
+    <p>Parágrafo 3</p>
+    <p>Parágrafo 4</p>
+    <p>Parágrafo 5</p>
+    <p>Parágrafo 6</p>
+    <p>Parágrafo 7</p>
+    <div id="msg">Click here</div>
+    <div name="msg">Click here 2</div>
+    <div class="msg">Click here 3</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('Está escrito assim: ' + p1.innerText) 
+        // window.alert(p1.innerText) // Emitir alerta
+        // var d = window.document.getElementById('msg') // Quando a div possuir ID
+        // d.innerText = 'Novo texto de mensagem...' 
+        // window.document.getElementById('msg').innerText = 'Olá'// Comando grande
+        // var d = window.document.getElementsByName('msg')[2] // Quando a div possuir Name
+        // d.innerText = 'Olá 2!' // Quando a div possuir Name
+        // var e = window.document.getElementsByClassName('msg')[3] // Quando a div possuir ClassName
+        // e.innerText = 'Olá 3!' // Quando a div possuir ClassName
+        var d = window.document.querySelector('div#msg')
+        d.innerText = 'Olá 4'
+    </script>
+</body>
+</html>
