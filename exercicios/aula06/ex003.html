@@ -11,12 +11,42 @@
     <h1>Hello, World!</h1> <!-- Comentário em HTML -->
     <p>Primeiro parágrafo</p>
     <script>
+        //Primeiro modo de fazer:
+        var n1 = window.prompt('Digite um número: ') // string
+        var n2 = window.prompt('Digite outro número: ') // string
+        var s = n1 + n2
+        window.alert('A soma dos valores é: ' + s) 
+        // A soma exibirá uma concatenação dos números: n1 e n2.
+
+
+        //Segundo modo de fazer:
+        var n1 = Number.parseInt(window.prompt('Digite um número: ')) // string
+        var n2 = Number.parseInt(window.prompt('Digite outro número: ')) // string
+        var s = n1 + n2
+        window.alert('A soma dos valores é: ' +  + s)
+        // A soma exibirá a soma dos valores dos números: n1 e n2, que foram convertidos para inteiros. Porém, não será possível informar números reais.
+
+        //Terceiro modo de fazer:
+        var n1 = Number.parseFloat(window.prompt('Digite um número: ')) // string
+        var n2 = Number.parseFloat(window.prompt('Digite outro número: ')) // string
+        var s = n1 + n2
+        window.alert('A soma dos valores é: ' +  + s)
+        // A soma exibirá a soma dos valores dos números: n1 e n2, que foram convertidos para real.
+
+        //Quarto modo de fazer:
         var n1 = Number(window.prompt('Digite um número: ')) // string
         var n2 = Number(window.prompt('Digite outro número: ')) // string
         var s = n1 + n2
         window.alert('A soma dos valores é: ' + String(s))  // Concatenação
         // (number + number) para adição
         // (string + string) para concatenação
+
+        //Quarto modo de fazer:
+        var n1 = Number(window.prompt('Digite um número: ')) // string
+        var n2 = Number(window.prompt('Digite outro número: ')) // string
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é: ${s}.`)
+        // Forma mais moderna de utilização de template strings. Placeholder para facilitar a vida.
     </script>
 </body>
 </html>
