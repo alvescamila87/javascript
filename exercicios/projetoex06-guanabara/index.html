@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Idioma do site -->
+<head>
+    <!-- Configurações do site -->
+    <!-- Guia do navegador -->
+    <meta charset="UTF-8"> <!-- Configurações para suportar acentuação -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Vai ocupar 100% de área disponível do body -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Analisador de números</title>
+</head>
+<body>
+    <!-- Conteúdo do site -->
+    <!-- Corpo do site no navegador -->
+    <header>
+        <h1>Analisador de números</h1> <!-- Cabeçalho -->
+    </header>
+    <section>
+        <div>
+            <p>
+                <label for="inumero">Número (entre 1 e 100):</label>
+                <input type="number" name="numero" id="inumero" required min="1" max="100">
+                <input type="button" value="Adicionar" onclick="adicionar()">
+                <br><select name="lista" id="ilista" size="10"></select>
+                <br><input type="button" value="Finalizar" onclick="finalizar()">
+            </p>
+        </div>
+        <div id="iresultado">
+            
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Camila aprendendo com Cursoemvídeo</p> <!-- Símbolos -->
+    </footer>
+    <script src="script01.js"></script>
+</body>
+</html>
